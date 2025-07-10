@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Silly story generator</title>
+
+  <style>
+    body {
+      font-family: helvetica, sans-serif;
+      width: 350px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    div {
+      padding-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+
+    p {
+      background: #ffc125;
+      color: #5e2612;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="customname">Enter custom name:</label>
+    <input id="customname" type="text" placeholder="" required />
+  </div>
+  <div>
+    <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked />
+    <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk" />
+  </div>
+  <div>
+    <button class="randomize" onclick="sillyStory()">Generate random story</button>
+  </div>
+  <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+  <p class="story"></p>
+  <script>
+    let b = document.getElementById("customname");
+    let c = document.getElementsByName("ukus");
+    let selected;
+    function sillyStory() {
+      let a = Math.floor(Math.random() * 4);
+      for (let d of c) {
+        if (d.checked) {
+          selected = d;
+          break;
+        }
+      }
+      if (a == 0) {
+        if (selected.value == 'us') {
+          document.querySelector(".story").innerHTML = `It was 94 fahrenheit outside, so ${b.value} went for a walk. When they got to ${b.value} they stared in horror for a few moments, then ${b.value} Bob saw the whole thing, but was not surprised — ${b.value} weighs 300 pounds, and it was a hot day.`
+        } else {
+          document.querySelector(".story").innerHTML = `It was 34.44 celsius outside, so ${b.value} went for a walk. When they got to ${b.value} they stared in horror for a few moments, then ${b.value} Bob saw the whole thing, but was not surprised — ${b.value} weighs 136.077 kilograms, and it was a hot day.`
+        }
+      } else if (a == 1) {
+        document.querySelector(".story").innerHTML = "Willy the Goblin<br> Big Daddy<br> Father Christmas";
+      } else if (a == 2) {
+        document.querySelector(".story").innerHTML = "the soup kitchen<br> Disneyland<br> the White House";
+      } else if (a == 3) {
+        document.querySelector(".story").innerHTML = "spontaneously combusted<br> melted into a puddle on the sidewalk<br> turned into a slug and crawled away"
+      }
+    }
+  </script>
+</body>
+
+</html>
