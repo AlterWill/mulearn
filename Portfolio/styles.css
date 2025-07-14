@@ -16,13 +16,8 @@
     padding:15px 0;
     align-items:center;
     justify-content: space-between;
-    top:4px;
+    top:10px;
 }
-
-.navbar .logo{
-}
-
-
 
 ul li{
     list-style: none;
