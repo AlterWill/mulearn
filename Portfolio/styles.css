@@ -7,6 +7,11 @@
     width:100%;
     background-color: black;
     font-family:sans-serif;
+    height: 2000px;
+}
+
+.info h3{
+    color: white;
 }
 
 .navbar{
@@ -17,6 +22,57 @@
     align-items:center;
     justify-content: space-between;
     top:4px;
+}
+
+.navbar .logo{
+    color: cyan;
+}
+
+.skill ul{
+    list-style: none;
+    color: rgb(224, 240, 0);
+}
+
+.skill{
+    text-align: center;
+    transition:.9s ease;
+    border: 5px solid darkorange;
+    border-radius: 25px;
+    width:305px;
+    padding: 0.75rem;
+    margin: 0 auto;
+}
+
+.skill li{
+    border: 2px solid darkorange;
+    border-radius: 100px;
+}
+
+.skill:hover{
+    transform: rotate(351deg);
+    transition: border 11s ease;
+}
+
+.skill h2{
+    border: 2px solid darkorange;
+    width: 60px;
+    margin:0 auto ;
+    border-radius: 25px;
+    color: darkorange;;
+}
+
+.skill h3{
+    color: darkorange;
+}
+
+.skill li:hover{
+    color:blue;
+    transition-property: color;
+    transition: 1s ease;
+}
+
+ul{
+    margin-top:-1%;
 }
 
 ul li{
@@ -52,6 +108,7 @@ ul li a:hover{
     font-size:18px;
     letter-spacing:1px;
     line-height:24px; 
+    font-weight: 100;
 }
 
 .info span{
@@ -73,23 +130,50 @@ ul li a:hover{
     background:rgb(59,174,209);
 }
 
-.image{
-    width:30%;
-    height:60%;
-    position: absolute;
-    right:100px;
-    bottom:0;
+.project {
+    margin: 50px auto;
+    border: 2px solid cyan;
+    border-radius: 25px;
+    width: 350px;
+    text-align: center;
+    color: cyan;
 }
 
-.image img{
-    position:absolute;
-    height:140%;
-    left:40%;
-    transform: translate(-55%);
-    bottom:0;
-    transition:left 2s ease;
+.project:hover{
+    border-width: 25px;
+    transform: scaleX(30px);
+    transition: border-width 2.5s ease;
+
 }
 
-.image:hover{
-    left:55%;
+.project div{
+    margin:20px;
+    font-size: 30px;
+    font-weight: 2px;
+    color: white;
+}
+
+.about_me{
+    border: 2px solid rgb(14, 80, 221);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.about_me h3{
+    color: rgb(89, 0, 255);
+}
+
+.about_me:hover{
+    border-radius: 100px;
+    width: 25%;
+    transform: scaleX(30px);
+    transition: border-radius 10s,width 3s ease;
+
+}
+
+#detail{
+    font-family: 'Segoe UI', sans-serif;
+    color: lime;
 }
