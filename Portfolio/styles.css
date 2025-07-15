@@ -137,13 +137,12 @@ ul li a:hover{
     width: 350px;
     text-align: center;
     color: cyan;
+    transition: all 2.5s ease;
 }
 
 .project:hover{
     border-width: 25px;
     transform: scaleX(30px);
-    transition: border-width 2.5s ease;
-
 }
 
 .project div{
