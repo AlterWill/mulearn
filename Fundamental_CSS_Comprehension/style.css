@@ -1,0 +1,82 @@
+/*  General page styles
+* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 20px;
+  border:2px solid red;
+  border-radius: 20px;
+  max-width: 640px;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* Selectors to be matched up with rulesets */
+
+.card article img
+.card footer
+.card header
+.card
+
+/* Rulesets to be matched up with selectors */
+header,footer{
+  height:1.875em;
+  padding:0.625;
+}
+
+header{
+  font-size:30px;
+  padding:20px;
+  background-color: red;
+  border-top-right-radius:20px ;
+  border-top-left-radius:20px ;
+  width:94%;
+}
+
+*{
+  margin:0;
+}
+
+article{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size:25px;
+  color:white;
+  background-color: darkred;
+  max-width: 100%;
+}
+
+article img{
+  display:block;
+  box-sizing:border-box;
+  max-height:100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+h2{
+  font-size:1.25em;
+  height:"30px";
+}
+
+footer p{
+  font-size:0.9375em;
+  height:30px;
+}
+
+article p{
+  padding:20px;
+}
+
+footer{
+  font-size:20px;
+  padding:20px;
+  background-color: red;
+  border-bottom-right-radius:20px ;
+  border-bottom-left-radius:20px ;
+  width:94%;
+}
+}
